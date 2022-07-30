@@ -1,0 +1,166 @@
+@media screen and (max-width: 1300px){
+    .banner-project{
+        display: none;
+    }
+    /* .contacts{
+        height: 60vh;
+    } */
+    .about .about-description{
+        max-width: 100%;
+        /* height: 30vh; */
+        display: flex;
+        /* padding-right: 3rem; */
+        /* background: purple; */
+        flex-direction: column;
+        /* padding-bottom: 3rem; */
+    }
+    .about .person-reveal{
+        display: none;
+    }
+    .about .about-description .social-media{
+        margin-top: 3rem;
+        /* background: brown; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 0%;
+        width: 100%;
+    }
+    .projects .project-items{
+        width: 100%;
+        /* min-height: 100vh; */
+        /* background: darkgreen; */
+        display: grid;
+        padding: 0 clamp(3px, 4vw, 50px);
+        grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+        grid-template-rows: repeat(2, minmax(30vw, 25rem));
+        /* grid-auto-rows: 30em; */
+    }
+    .projects{
+        max-width: 100%;
+        padding-top: 5rem;
+    }
+}
+@media screen and (max-width:870px){
+    .projects .project-items{
+        width: 100%;
+        /* min-height: 100vh; */
+        /* background: darkgreen; */
+        display: grid;
+        padding: 0 clamp(3px, 4vw, 50px);
+        grid-template-columns: repeat(2, minmax(30vw, 1fr));
+        grid-template-rows: repeat(3, minmax(30vw, 25rem));
+        /* grid-auto-rows: 30em; */
+    }
+}
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0 1rem 0 1rem;
+    }
+    ul li {
+        margin: 0 5px 0 5px;
+    }
+    ul li:nth-child(3) {
+        margin: 0 0 0 5px;
+    }
+    
+    .container-blocks .loading-text{
+        transform: scale(1);
+    }
+    .transition1 .location{
+        font-size: 1rem;
+        top: 20px;
+        right: 30px;
+    }
+    .transition1 .loading-prg{
+        font-size: 1rem;
+        bottom: 10px;
+        left: 30px;
+    }
+    .transition1 .load-percentage{
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+        font-size: 1rem;
+    }
+    .transition1 .abs-container{
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 1rem;
+    }
+    .projects .project-items{
+        width: 100%;
+        /* min-height: 100vh; */
+        /* background: darkgreen; */
+        display: grid;
+        padding: 0 clamp(3px, 4vw, 50px);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 25rem);
+        /* grid-auto-rows: 30em; */
+    }
+    .project-desc {
+        position: relative;
+        width: 100%;
+        padding-left: clamp(3px, 4vw, 50px);
+        padding-right: clamp(3px, 4vw, 50px);
+        /* height: 100%; */
+        /* margin-left: 30px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* padding-top: 4em; */
+        /* align-items: center; */
+        padding-bottom: 2rem;
+        /* background: green; */
+    }
+    .about{
+        position: relative;
+        max-width: 100%;
+        /* height: 100vh; */
+        color: white;
+        /* background: green; */
+        /* align-items: center;
+        justify-content: center; */
+        padding-top: 5rem;
+        padding-left: clamp(3px, 4vw, 50px);
+        padding-right: clamp(3px, 4vw, 50px);
+        display: flex;
+        justify-content:  space-between;
+        padding-bottom: 10%;
+    }
+    .pr-count{
+        position: absolute;
+        top: 0;
+        right: -25px;
+        /* font-family: "Vogue", serif; */
+        font-family: 'HelveticaNowDisplay-Regular', sans-serif;
+        font-size: 15px;
+        /* font-style: italic; */
+        color: white;
+    }
+    .pr-available{
+        display: none;
+    }
+    .projects .project-items .grid-item .grid-items{
+        clip-path: polygon(6% 10%, 95% 10%, 95% 90%, 6% 90%) !important;
+    }
+    .projects .project-items .grid-item:hover .grid-items{
+        clip-path: polygon(6% 10%, 95% 10%, 95% 90%, 6% 90%) !important;
+    }
+    .projects .project-items .grid-item .grid-name{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .projects{
+        max-width: 100%;
+        padding-top: 5rem;
+    }
+    .project-desc .pr-desc {
+        width: 100%;
+    }
+    .cursor, .cursor-follower, .cursor-follower2{
+        display: none;
+    }
+}
